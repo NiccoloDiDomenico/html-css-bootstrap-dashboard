@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,9 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
     <!-- header -->
     <header>
         <!-- navbar -->
@@ -56,5 +58,97 @@
     </header>
     <!-- /header -->
 
+    <!-- main -->
+    <main>
+        <!-- form section -->
+        <section class="container py-5">
+            <!-- title -->
+            <h1 class="pt-5">Nuovo Libro</h1>
+
+            <!-- form grid -->
+            <div class="row pt-3">
+                <!-- name -->
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="author-name" class="form-label">Nome autore</label>
+                        <input type="text" class="form-control" id="author-name"
+                            placeholder="Inserisci il nome dell'autore">
+                    </div>
+                </div>
+                <!-- surname -->
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="author-surname" class="form-label">Cognome autore</label>
+                        <input type="text" class="form-control" id="author-surname"
+                            placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                </div>
+                <!-- title -->
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="title-book" class="form-label">Titolo</label>
+                        <input type="text" class="form-control" id="title-book"
+                            placeholder="Inserisci il titolo del libro">
+                        <div id="title-book-description" class="form-text">
+                            Inserire titolo in versione italiana
+                        </div>
+                    </div>
+                </div>
+                <!-- gender -->
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Genere</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">Fantasy</option>
+                            <option value="2">Giallo</option>
+                            <option value="3">Romantico</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- publ. year -->
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="year" class="form-label">Anno di pubblicazione</label>
+                        <input type="text" class="form-control" id="year" placeholder="Inserisci l'anno">
+                    </div>
+                </div>
+                <!-- ISBN -->
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="mb-3">
+                        <label for="code" class="form-label">ISBN#</label>
+                        <input type="text" class="form-control" id="code" placeholder="Inserisci il codice ISBN#">
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- text-area -->
+                <div class="col-12 mb-3">
+                    <label for="Textarea">Note</label>
+                    <textarea class="form-control" placeholder="Inserisci eventuali note sul libro"
+                        id="Textarea"></textarea>
+                </div>
+
+                <!-- check-box -->
+                <div class="col- mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="digital-check">
+                    <label class="form-check-label" for="digital-check">
+                        Disponibile anche in digitale
+                    </label>
+                </div>
+
+                <!-- validation btn -->
+                <div class="col-12">
+                    <button class="btn btn-primary" type="add-book">Aggiungi Libro</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- /form section -->
+    </main>
+    <!-- /main -->
+
 </body>
+
 </html>
